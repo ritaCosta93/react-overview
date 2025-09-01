@@ -1,7 +1,15 @@
 # React.js Mega Overview 
 This project is an overview of many of the **React.js** components and features.
----
 
+## 📦 Installation & Setup
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/ritaCosta93/react-overview.git
+cd react-overview
+npm install 
+```
 
 ## 🚀 Components
 - **NumbersList**: Goes through an array and **map the values to a list**.
@@ -17,14 +25,3 @@ This project is an overview of many of the **React.js** components and features.
 ## 🛠️ Tech Stack
 - [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-
-
----
-## 📦 Installation & Setup
-
-Clone the repository and install dependencies:
-
-```bash
-git clone https://github.com/ritaCosta93/react-overview.git
-cd react-overview
-npm install
