@@ -4,11 +4,12 @@ import { ClickMe } from './components/ClickMe';
 import { NumbersList } from './components/NumbersList';
 import { Popup } from './components/Popup';
 import { PrivateContent } from './components/PrivateContent';
+import { Spaceships } from './components/Spaceships';
+import { ThemeSwitch } from './components/ThemeSwitch';
 import { UpdateTodoList } from './components/UpdateTodoList';
 import { UpdateUsername } from './components/UpdateUsername';
 import { UserProfile } from './components/UserProfile';
 import { UsersInfo } from './components/UsersInfo';
-import { ThemeSwitch } from './components/ThemeSwitch';
 
 const App = () => {
   const [visible, setVisible] = useState(false);
@@ -37,6 +38,7 @@ const App = () => {
         <Popup visible={visible} onClose={() => setVisible(false)} />
       </div>
       <ThemeSwitch />
+      <Spaceships />
     </div>
   );
 };
