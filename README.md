@@ -21,6 +21,7 @@ npm install
 - **TodoList**: **Updates a state**, a todo list, with items from a text input field. Also **removes items from the list**, updating the state when clicking on the item. Used the array method **array.filter()** to remove a specific item from the list.
 - **Popup**: **Shows a popup that renders outside of the app root container.** It runs in a separate div and it's independent from the rest of the app. It was created using **createPortal**. There is button on the main app component that controls the visibility of this popup.
 - **ThemeSwitcher**: This component uses the **useState** hook and a **switch structure to change the app main CSS classes**, changing the app color theme, choosing from 3 themes that are set clicking on a button.
+- **Spaceships**: This component is using **axios** to fetch data from an API and using the hook **useEffect** to fetch the data as soon as the component loads. Adding an empty array after the useEffect callback makes it load once only.
 
 ## 🛠️ Tech Stack
 - [React](https://reactjs.org/)
