@@ -1,3 +1,5 @@
+import ReactMarkdown from 'react-markdown';
+
 export const UserProfile = ({ user }) => {
   return (
     <div className='user-profile flex flex-col p-2 my-2'>
@@ -17,6 +19,7 @@ export const UserProfile = ({ user }) => {
           {user.location}
         </span>
       </div>
+      <ReactMarkdown>**Description**: Receives **user details from props and renders them in a div**. The props come from a parent component.</ReactMarkdown>
     </div>
   );
 };

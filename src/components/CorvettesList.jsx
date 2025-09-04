@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import ReactMarkdown from 'react-markdown';
 import { Data } from './Starwars';
 export const CorvettesList = () => {
   const corvette = useContext(Data);
@@ -27,6 +28,12 @@ export const CorvettesList = () => {
           </span>
         </div>
       ))}
+      <div className='flex flex-row'>
+        <ReactMarkdown>
+          **Description**: This component consumes data from the **Context API**, and filters it before rendering, using the ternary operator. This component is
+          a **Data Consumer**
+        </ReactMarkdown>
+      </div>
     </div>
   );
 };

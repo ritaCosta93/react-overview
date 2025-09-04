@@ -1,3 +1,5 @@
+import ReactMarkdown from 'react-markdown';
+
 export const UsersInfo = () => {
   const users = [
     {
@@ -27,6 +29,7 @@ export const UsersInfo = () => {
           <br />
         </div>
       ))}
+      <ReactMarkdown>**Description**: Goes through an array of json objects and **renders the values to divs**.</ReactMarkdown>
     </div>
   );
 };

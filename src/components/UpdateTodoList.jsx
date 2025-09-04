@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
 
 export const UpdateTodoList = () => {
   const [todoListItems, updateTodos] = useState(['study', 'work']);
@@ -26,6 +27,10 @@ export const UpdateTodoList = () => {
       <button className='p-2 rounded button-sm bg-pink-500 w-25 hover:bg-pink-200' onClick={addItem}>
         Add Item
       </button>
+      <ReactMarkdown>
+        **Description**: **Updates a state**, a todo list, with items from a text input field. Also **removes items from the list**, updating the state when
+        clicking on the item. Used the array method **array.filter()** to remove a specific item from the list.
+      </ReactMarkdown>
     </div>
   );
 };

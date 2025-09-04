@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
 
 export const UpdateUsername = () => {
   const [username, setUsername] = useState('max');
@@ -22,6 +23,7 @@ export const UpdateUsername = () => {
           </button>
         </div>
       </form>
+      <ReactMarkdown>**Description**: **Updates a state** with a **form input value**. Using **useState**.</ReactMarkdown>
     </div>
   );
 };

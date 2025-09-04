@@ -11,7 +11,7 @@ export const NumbersList = () => {
         ))}
       </ul>
       <div className='flex flex-row'>
-        <ReactMarkdown>**Desription**: Goes through an array and **map the values to a list**</ReactMarkdown>
+        <ReactMarkdown> **Description**: Goes through an array and **maps the values to a list**</ReactMarkdown>
       </div>
     </div>
   );

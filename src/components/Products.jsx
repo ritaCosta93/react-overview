@@ -1,4 +1,5 @@
 import { useReducer } from 'react';
+import ReactMarkdown from 'react-markdown';
 
 const initialState = [
   { id: 0, name: 'Wheel', price: 17.0, stock: 3 },
@@ -44,6 +45,7 @@ export const Products = () => {
       <button onClick={() => dispatch({ type: 'addProduct' })} className='p-2 bg-blue-500 text-white rounded'>
         Add 1 Product
       </button>
+      <ReactMarkdown>**Description**: This component uses the **useReducer** hook and implements a reducer to manage a list of products.</ReactMarkdown>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import ReactMarkdown from 'react-markdown';
 
 export const Spaceships = () => {
   const [spaceships, setSpaceships] = useState([]);
@@ -44,6 +45,10 @@ export const Spaceships = () => {
           </span>
         </div>
       ))}
+      <ReactMarkdown>
+        **Description**: This component is using **axios** to fetch data from an API and using the hook **useEffect** to fetch the data as soon as the component
+        loads. Adding an empty array after the useEffect callback makes it load once only.
+      </ReactMarkdown>
     </div>
   );
 };

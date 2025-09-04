@@ -14,7 +14,7 @@ export const ClickMe = () => {
         Click Me
       </button>
       <div className='flex flex-row'>
-        <ReactMarkdown>**Handles an event** when clicking on a button.</ReactMarkdown>
+        <ReactMarkdown> **Description**: **Handles an event** when clicking on a button.</ReactMarkdown>
       </div>
     </div>
   );
