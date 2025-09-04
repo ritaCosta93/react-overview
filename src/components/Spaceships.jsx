@@ -27,24 +27,23 @@ export const Spaceships = () => {
   return (
     <div className='flex flex-col border-t p-2 my-2 gap-2'>
       <strong>Spaceships</strong>
-      <ul>
-        {spaceships.map((s, i) => (
-          <div key={i} className='flex flex-col my-2 border-t'>
-            <span>
-              <strong>name:</strong>
-              {s.name}
-            </span>
-            <span>
-              <strong>model:</strong>
-              {s.model}
-            </span>
-            <span>
-              <strong>passengers:</strong>
-              {s.passengers}
-            </span>
-          </div>
-        ))}
-      </ul>
+
+      {spaceships.map((s, i) => (
+        <div key={i} className='flex flex-col'>
+          <span className='flex gap-2'>
+            <strong>name:</strong>
+            {s.name}
+          </span>
+          <span className='flex gap-2'>
+            <strong>model:</strong>
+            {s.model}
+          </span>
+          <span className='flex gap-2'>
+            <strong>passengers:</strong>
+            {s.passengers}
+          </span>
+        </div>
+      ))}
     </div>
   );
 };

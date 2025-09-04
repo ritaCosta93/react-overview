@@ -5,6 +5,7 @@ import { NumbersList } from './components/NumbersList';
 import { Popup } from './components/Popup';
 import { PrivateContent } from './components/PrivateContent';
 import { Spaceships } from './components/Spaceships';
+import { Starwars } from './components/Starwars';
 import { ThemeSwitch } from './components/ThemeSwitch';
 import { UpdateTodoList } from './components/UpdateTodoList';
 import { UpdateUsername } from './components/UpdateUsername';
@@ -39,6 +40,7 @@ const App = () => {
       </div>
       <ThemeSwitch />
       <Spaceships />
+      <Starwars />
     </div>
   );
 };
