@@ -25,6 +25,8 @@ npm install
 - **Starwars**: This component fetches data from an API and uses the **Context API** hook **createContext** to share data to another component. This component is a **Data Provider**.
 - **CorvettesList**: This component consumes data from the **Context API**, and filters it before rendering, using the ternary operator. This component is a **Data Consumer**.
 - **Products**: This component uses the **useReducer** hook and implements a reducer to manage a list of products.
+- **DoNotRerender**: This component uses the **useRef** hook on a text input to update a state without re-rendering the component.
+
 
 ## 🛠️ Tech Sta
 - [React](https://reactjs.org/)
