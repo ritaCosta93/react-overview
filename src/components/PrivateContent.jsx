@@ -4,7 +4,7 @@ export const PrivateContent = ({ login }) => {
   };
 
   return (
-    <div className='private-content flex flex-col border-t p-2 my-2'>
+    <div className='private-content flex flex-col p-2 my-2'>
       <strong>Private Content</strong>
       <div>{handleContent(login)}</div>
     </div>

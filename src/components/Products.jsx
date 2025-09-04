@@ -28,7 +28,7 @@ export const Products = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <div className='products flex flex-col border-t my-2 p-2 gap-2'>
+    <div className='products flex flex-col my-2 p-2 gap-2'>
       <strong>Products</strong>
       <ul>
         {state.map(p => (

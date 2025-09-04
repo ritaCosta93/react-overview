@@ -13,7 +13,7 @@ export const UpdateTodoList = () => {
   };
 
   return (
-    <div className='update-todo-list flex flex-col border-t my-2 p-2 gap-2'>
+    <div className='update-todo-list flex flex-col  my-2 p-2 gap-2'>
       <strong>Todo List</strong>
       {todoListItems.map((item, index) => (
         <ul className='list-disc' key={index}>

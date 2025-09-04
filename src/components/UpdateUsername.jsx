@@ -8,7 +8,7 @@ export const UpdateUsername = () => {
   };
 
   return (
-    <div className='update-username flex flex-col border-t my-2 p-2'>
+    <div className='update-username flex flex-col order-t my-2 p-2'>
       <strong>Update username</strong>
       <span>Username: {username}</span>
       <form className='flex flex-col gap-2'>

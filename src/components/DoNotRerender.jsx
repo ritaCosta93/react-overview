@@ -11,7 +11,7 @@ export const DoNotRerender = () => {
   };
 
   return (
-    <div className='do-not-refresh flex flex-col border-t my-2 p-2'>
+    <div className='do-not-refresh flex flex-col my-2 p-2'>
       <strong>Do Not Rerender</strong>
       <p>Saved value: {savedValue}</p>
       <input type='text' ref={inputRef} className='w-30 border border-pink-500' />

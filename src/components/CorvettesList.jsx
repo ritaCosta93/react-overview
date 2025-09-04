@@ -5,7 +5,7 @@ export const CorvettesList = () => {
   const corvete = useContext(Data);
 
   return (
-    <div className='corvettes-list flex flex-col p-2 my-2'>
+    <div className='corvettes-list flex flex-col p-2 '>
       <strong>Corvettes</strong>
       {corvete.map((s, i) =>
         s.starship_class === 'corvette' ? (

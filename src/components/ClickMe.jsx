@@ -3,7 +3,7 @@ export const ClickMe = () => {
     alert("You've clicked on a button");
   };
   return (
-    <div className='click-me flex flex-col p-2 my-2 border-t'>
+    <div className='click-me flex flex-col p-2 '>
       <strong>Click Me</strong>
       <button
         className='button bg-neutral-100 hover:bg-pink-200 active:bg-pink-100 w-20 rounded hover:text-pink-500 hover:shadow-sm'

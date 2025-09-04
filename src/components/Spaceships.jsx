@@ -25,7 +25,7 @@ export const Spaceships = () => {
   if (error) return <p>{error}</p>;
 
   return (
-    <div className='flex flex-col border-t p-2 my-2 gap-2'>
+    <div className='flex flex-col p-2 my-2 gap-2'>
       <strong>Spaceships</strong>
 
       {spaceships.map((s, i) => (

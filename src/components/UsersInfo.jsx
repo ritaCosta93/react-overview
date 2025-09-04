@@ -9,7 +9,7 @@ export const UsersInfo = () => {
     { id: 2, username: 'Gaby', email: 'gaby@testproject.com', location: 'UK' }
   ];
   return (
-    <div className='users-info flex flex-col gap-2 my-2 p-2  border-t'>
+    <div className='users-info flex flex-col gap-2 my-2 p-2 '>
       <strong>Users Info</strong>
       {users.map(user => (
         <div key={user.id}>

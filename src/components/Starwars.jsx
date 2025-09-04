@@ -23,7 +23,7 @@ export const Starwars = () => {
   }, []);
 
   return (
-    <div className='starwars flex flex-col border-t my-2 p2'>
+    <div className='starwars flex flex-col my-2 p2'>
       <Data.Provider value={spaceships}>
         <CorvettesList />
       </Data.Provider>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export const ThemeSwitch = () => {
-  const [theme, setTheme] = useState('light');
+  const [_, setTheme] = useState('light');
 
   const handleThemeChange = newTheme => {
     setTheme(newTheme);
@@ -12,10 +12,10 @@ export const ThemeSwitch = () => {
 
     switch (newTheme) {
       case 'mint':
-        app.classList.add('bg-teal-500', 'text-white');
+        app.classList.add('bg-teal-500', 'text-dark');
         break;
       case 'dark':
-        app.classList.add('bg-gray-800', 'text-white');
+        app.classList.add('bg-gray-800', 'text-dark');
         break;
       default:
         app.classList.add('bg-white', 'text-black');
@@ -24,7 +24,7 @@ export const ThemeSwitch = () => {
   };
 
   return (
-    <div className='flex flex-col gap-2 p-2 border-t'>
+    <div className='flex flex-col gap-2 p-2'>
       <strong>Theme Switcher</strong>
       <div className='flex flex-row gap-2'>
         <button className='px-3 py-1 bg-teal-300 rounded' onClick={() => handleThemeChange('mint')}>
