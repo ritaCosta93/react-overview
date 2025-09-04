@@ -1,11 +1,11 @@
 import { useContext } from 'react';
 import { Data } from './Starwars';
 
-export const CorvetesList = () => {
+export const CorvettesList = () => {
   const corvete = useContext(Data);
 
   return (
-    <div className='corvetes-list flex flex-col p-2 my-2'>
+    <div className='corvettes-list flex flex-col p-2 my-2'>
       <strong>Corvettes</strong>
       {corvete.map((s, i) =>
         s.starship_class === 'corvette' ? (

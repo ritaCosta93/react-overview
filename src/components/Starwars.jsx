@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { createContext } from 'react';
 import { useEffect, useState } from 'react';
-import { CorvetesList } from './CorvetesList';
+import { CorvettesList } from './CorvettesList';
 
 export const Data = createContext();
 
@@ -25,7 +25,7 @@ export const Starwars = () => {
   return (
     <div className='starwars flex flex-col border-t my-2 p2'>
       <Data.Provider value={spaceships}>
-        <CorvetesList />
+        <CorvettesList />
       </Data.Provider>
     </div>
   );
