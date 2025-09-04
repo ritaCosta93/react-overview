@@ -1,6 +1,8 @@
 # React.js Mega Overview 
 This project is an overview of many of the **React.js** components and features.
 
+![React.js Mega Overview ](./public/screenshot.png)
+
 ## 📦 Installation & Setup
 
 Clone the repository and install dependencies:
