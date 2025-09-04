@@ -1,60 +1,68 @@
 import { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { Popup } from './components/Popup';
+
 const App = () => {
   const [visible, setVisible] = useState(false);
+
   return (
     <div className='app flex flex-col gap-4 p-4'>
-      <nav className='flex gap-2 flex-wrap'>
-        <Link className='px-2 py-1 bg-blue-500 text-white rounded' to='/numbers-list'>
-          NumbersList
+      {/* Grid navigation */}
+      <div className='grid grid-cols-5 gap-2'>
+        <Link className='w-40 h-40 flex items-center justify-center bg-blue-500 text-white rounded text-xs text-center' to='/numbers-list'>
+          Numbers List
         </Link>
-        <Link className='px-2 py-1 bg-blue-500 text-white rounded' to='/users-info'>
-          UsersInfo
+        <Link className='w-40 h-40 flex items-center justify-center bg-blue-500 text-white rounded text-xs text-center' to='/users-info'>
+          Users Info
         </Link>
-        <Link className='px-2 py-1 bg-blue-500 text-white rounded' to='/users-profile'>
-          UserProfile
+        <Link className='w-40 h-40 flex items-center justify-center bg-blue-500 text-white rounded text-xs text-center' to='/users-profile'>
+          User Profile
         </Link>
-        <Link className='px-2 py-1 bg-blue-500 text-white rounded' to='/private-content'>
-          PrivateContent
+        <Link className='w-40 h-40 flex items-center justify-center bg-blue-500 text-white rounded text-xs text-center' to='/private-content'>
+          Private Content
         </Link>
-        <Link className='px-2 py-1 bg-blue-500 text-white rounded' to='/click-me'>
-          ClickMe
+        <Link className='w-40 h-40 flex items-center justify-center bg-blue-500 text-white rounded text-xs text-center' to='/click-me'>
+          Click Me
         </Link>
-        <Link className='px-2 py-1 bg-blue-500 text-white rounded' to='/theme-switch'>
+        <Link className='w-40 h-40 flex items-center justify-center bg-blue-500 text-white rounded text-xs text-center' to='/theme-switch'>
           Theme Switch
         </Link>
-        <Link className='px-2 py-1 bg-blue-500 text-white rounded' to='/update-username'>
-          UpdateUsername
+        <Link className='w-40 h-40 flex items-center justify-center bg-blue-500 text-white rounded text-xs text-center' to='/update-username'>
+          Update Username
         </Link>
-        <Link className='px-2 py-1 bg-blue-500 text-white rounded' to='/update-todolist'>
-          UpdateTodoList
+        <Link className='w-40 h-40 flex items-center justify-center bg-blue-500 text-white rounded text-xs text-center' to='/update-todolist'>
+          Update Todo List
         </Link>
-        <Link className='px-2 py-1 bg-blue-500 text-white rounded' to='/spaceships'>
+        <Link className='w-40 h-40 flex items-center justify-center bg-blue-500 text-white rounded text-xs text-center' to='/spaceships'>
           Spaceships
         </Link>
-        <Link className='px-2 py-1 bg-blue-500 text-white rounded' to='/starwars'>
+        <Link className='w-40 h-40 flex items-center justify-center bg-blue-500 text-white rounded text-xs text-center' to='/starwars'>
           Starwars
         </Link>
-        <Link className='px-2 py-1 bg-blue-500 text-white rounded' to='/products'>
+        <Link className='w-40 h-40 flex items-center justify-center bg-blue-500 text-white rounded text-xs text-center' to='/products'>
           Products
         </Link>
-        <Link className='px-2 py-1 bg-blue-500 text-white rounded' to='/do-not-re-render'>
-          DoNotRerender
+        <Link className='w-40 h-40 flex items-center justify-center bg-blue-500 text-white rounded text-xs text-center' to='/do-not-re-render'>
+          Do Not Re-render
         </Link>
-        <Link className='px-2 py-1 bg-blue-500 text-white rounded' to='/custom-hook'>
-          CustomHook
+        <Link className='w-40 h-40 flex items-center justify-center bg-blue-500 text-white rounded text-xs text-center' to='/corvettes'>
+          Corvettes
         </Link>
-        <Link className='px-2 py-1 bg-blue-500 text-white rounded' to='/use-id'>
-          UseId
+        <Link className='w-40 h-40 flex items-center justify-center bg-blue-500 text-white rounded text-xs text-center' to='/custom-hook'>
+          Custom Hook
         </Link>
-        <button onClick={() => setVisible(true)} className='px-4 w-45 py-2 bg-blue-500 text-white rounded'>
+        <Link className='w-40 h-40 flex items-center justify-center bg-blue-500 text-white rounded text-xs text-center' to='/use-id'>
+          UseId Hook
+        </Link>
+
+        <button onClick={() => setVisible(true)} className='w-40 h-40 flex items-center justify-center bg-blue-500 text-white rounded text-xs'>
           Show Popup
         </button>
 
         <Popup visible={visible} onClose={() => setVisible(false)} />
-      </nav>
+      </div>
 
+      {/* Content outlet */}
       <div className='p-2 border-t'>
         <Outlet />
       </div>

@@ -35,6 +35,7 @@ export const routes = [
       { path: 'update-username', element: <UpdateUsername /> },
       { path: 'update-todolist', element: <UpdateTodoList /> },
       { path: 'spaceships', element: <Spaceships /> },
+      { path: 'corvettes', element: <Starwars /> },
       { path: 'starwars', element: <Starwars /> },
       { path: 'products', element: <Products /> },
       { path: 'do-not-re-render', element: <DoNotRerender /> },

@@ -1,3 +1,5 @@
+import ReactMarkdown from 'react-markdown';
+
 export const ClickMe = () => {
   const handleButtonClick = () => {
     alert("You've clicked on a button");
@@ -11,6 +13,9 @@ export const ClickMe = () => {
       >
         Click Me
       </button>
+      <div className='flex flex-row'>
+        <ReactMarkdown>**Handles an event** when clicking on a button.</ReactMarkdown>
+      </div>
     </div>
   );
 };
