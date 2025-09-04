@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import { ClickMe } from './components/ClickMe';
+import { DoNotRerender } from './components/DoNotRerender';
 import { NumbersList } from './components/NumbersList';
 import { Popup } from './components/Popup';
 import { PrivateContent } from './components/PrivateContent';
@@ -43,6 +44,7 @@ const App = () => {
       <Spaceships />
       <Starwars />
       <Products />
+      <DoNotRerender />
     </div>
   );
 };
