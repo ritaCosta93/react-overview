@@ -27,6 +27,7 @@ npm install
 - **Products**: This component uses the **useReducer** hook and implements a reducer to manage a list of products.
 - **DoNotRerender**: This component uses the **useRef** hook on a text input to update a state without re-rendering the component.
 - **CustomHook**: This component fetches data from an API using the call in a **custom hook** called useSpaceships. This hook lives in the hooks folder.
+- **UseId**: This component uses the **useId** hook to give a text input a React generated id.
 
 ## 🛠️ Tech Sta
 - [React](https://reactjs.org/)
