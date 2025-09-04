@@ -31,7 +31,7 @@ npm install
 - **CustomHook**: This component fetches data from an API using the call in a **custom hook** called useSpaceships. This hook lives in the hooks folder.
 - **UseId**: This component uses the **useId** hook to give a text input a React generated id.
 
-## 🛠️ Tech Sta
+## 🛠️ Tech Stack
 - [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [React Icons](https://react-icons.github.io/react-icons/)
