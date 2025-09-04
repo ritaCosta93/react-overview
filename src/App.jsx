@@ -4,6 +4,7 @@ import { ClickMe } from './components/ClickMe';
 import { NumbersList } from './components/NumbersList';
 import { Popup } from './components/Popup';
 import { PrivateContent } from './components/PrivateContent';
+import { Products } from './components/Products';
 import { Spaceships } from './components/Spaceships';
 import { Starwars } from './components/Starwars';
 import { ThemeSwitch } from './components/ThemeSwitch';
@@ -41,6 +42,7 @@ const App = () => {
       <ThemeSwitch />
       <Spaceships />
       <Starwars />
+      <Products />
     </div>
   );
 };
