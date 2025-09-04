@@ -1,4 +1,4 @@
-import { useSpaceships } from '../hooks/UseApi.js';
+import { useSpaceships } from '../hooks/UseSpaceships.js';
 
 export const CustomHook = () => {
   const { spaceships } = useSpaceships('https://swapi.info/api/starships');
