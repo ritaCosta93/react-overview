@@ -12,6 +12,7 @@ import { Starwars } from './components/Starwars';
 import { ThemeSwitch } from './components/ThemeSwitch';
 import { UpdateTodoList } from './components/UpdateTodoList';
 import { UpdateUsername } from './components/UpdateUsername';
+import { UseId } from './components/UseId';
 import { UserProfile } from './components/UserProfile';
 import { UsersInfo } from './components/UsersInfo';
 
@@ -47,6 +48,7 @@ const App = () => {
       <Products />
       <DoNotRerender />
       <CustomHook />
+      <UseId />
     </div>
   );
 };
