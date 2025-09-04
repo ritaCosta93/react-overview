@@ -1,4 +1,4 @@
-import ReactMarkdown from 'react-markdown';
+import { Description } from './Description';
 
 export const UsersInfo = () => {
   const users = [
@@ -29,7 +29,7 @@ export const UsersInfo = () => {
           <br />
         </div>
       ))}
-      <ReactMarkdown>**Description**: Goes through an array of json objects and **renders the values to divs**.</ReactMarkdown>
+      <Description text='Goes through an array of json objects and **renders the values to divs**.' />
     </div>
   );
 };

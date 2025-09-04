@@ -1,5 +1,6 @@
 import { useContext } from 'react';
-import ReactMarkdown from 'react-markdown';
+import { Description } from './Description';
+
 import { Data } from './Starwars';
 export const CorvettesList = () => {
   const corvette = useContext(Data);
@@ -11,9 +12,9 @@ export const CorvettesList = () => {
 
   return (
     <div className='corvettes-list flex flex-col p-2'>
-      <strong>Corvettes ({corvettesOnly.length})</strong>
+      <strong className=' my-2'>Corvettes ({corvettesOnly.length})</strong>
       {corvettesOnly.map((s, i) => (
-        <div key={i} className='flex flex-col border p-2 rounded mb-2'>
+        <div key={i} className='flex flex-col'>
           <span className='flex gap-2'>
             <strong>name:</strong>
             {s.name}
@@ -29,10 +30,10 @@ export const CorvettesList = () => {
         </div>
       ))}
       <div className='flex flex-row'>
-        <ReactMarkdown>
-          **Description**: This component consumes data from the **Context API**, and filters it before rendering, using the ternary operator. This component is
-          a **Data Consumer**
-        </ReactMarkdown>
+        <Description
+          text='This component consumes data from the **Context API**, and filters it before rendering, using the ternary operator. This component is
+          a **Data Consumer**'
+        />
       </div>
     </div>
   );

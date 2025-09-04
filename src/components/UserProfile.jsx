@@ -1,4 +1,4 @@
-import ReactMarkdown from 'react-markdown';
+import { Description } from './Description';
 
 export const UserProfile = ({ user }) => {
   return (
@@ -19,7 +19,7 @@ export const UserProfile = ({ user }) => {
           {user.location}
         </span>
       </div>
-      <ReactMarkdown>**Description**: Receives **user details from props and renders them in a div**. The props come from a parent component.</ReactMarkdown>
+      <Description text='Receives **user details from props and renders them in a div**. The props come from a parent component.' />
     </div>
   );
 };

@@ -1,4 +1,5 @@
-import ReactMarkdown from 'react-markdown';
+import { Description } from './Description';
+
 export const NumbersList = () => {
   const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -11,7 +12,7 @@ export const NumbersList = () => {
         ))}
       </ul>
       <div className='flex flex-row'>
-        <ReactMarkdown> **Description**: Goes through an array and **maps the values to a list**</ReactMarkdown>
+        <Description text=' Goes through an array and **maps the values to a list**' />
       </div>
     </div>
   );

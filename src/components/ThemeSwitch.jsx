@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ReactMarkdown from 'react-markdown';
+import { Description } from './Description';
 
 export const ThemeSwitch = () => {
   const [_, setTheme] = useState('light');
@@ -38,10 +38,10 @@ export const ThemeSwitch = () => {
           Light Theme
         </button>
       </div>
-      <ReactMarkdown>
-        **Description**: This component uses the **useState** hook and a **switch structure to change the app main CSS classes**, changing the app color theme,
-        choosing from 3 themes that are set clicking on a button.
-      </ReactMarkdown>
+      <Description
+        text='This component uses the **useState** hook and a **switch structure to change the app main CSS classes**, changing the app color theme,
+        choosing from 3 themes that are set clicking on a button.'
+      />
     </div>
   );
 };

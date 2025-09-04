@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ReactMarkdown from 'react-markdown';
+import { Description } from './Description';
 
 export const UpdateUsername = () => {
   const [username, setUsername] = useState('max');
@@ -15,7 +15,12 @@ export const UpdateUsername = () => {
       <form className='flex flex-col gap-2'>
         <div className='flex flex-row gap-2'>
           <label htmlFor='username'>Username</label>
-          <input type='text' name='username' className='border border-pink-100' onChange={e => setUsername(e.target.value)} />
+          <input
+            type='text'
+            name='username'
+            className='border border-pink-200 active:border-pink-100 focus:border-pink-100'
+            onChange={e => setUsername(e.target.value)}
+          />
         </div>
         <div className='flex flex-row'>
           <button type='button' className='bg-pink-200 rounded hover:bg-pink-500 p-2' onClick={handleSubmit}>
@@ -23,7 +28,7 @@ export const UpdateUsername = () => {
           </button>
         </div>
       </form>
-      <ReactMarkdown>**Description**: **Updates a state** with a **form input value**. Using **useState**.</ReactMarkdown>
+      <Description text=' **Updates a state** with a **form input value**. Using **useState**.' />
     </div>
   );
 };

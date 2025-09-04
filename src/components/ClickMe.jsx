@@ -1,4 +1,4 @@
-import ReactMarkdown from 'react-markdown';
+import { Description } from './Description';
 
 export const ClickMe = () => {
   const handleButtonClick = () => {
@@ -14,7 +14,7 @@ export const ClickMe = () => {
         Click Me
       </button>
       <div className='flex flex-row'>
-        <ReactMarkdown> **Description**: **Handles an event** when clicking on a button.</ReactMarkdown>
+        <Description text='**Description**: **Handles an event** when clicking on a button.' />
       </div>
     </div>
   );

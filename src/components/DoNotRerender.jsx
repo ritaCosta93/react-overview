@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
-import ReactMarkdown from 'react-markdown';
+import { Description } from './Description';
+
 export const DoNotRerender = () => {
   const inputRef = useRef(null);
   const [savedValue, setSavedValue] = useState('');
@@ -18,9 +19,7 @@ export const DoNotRerender = () => {
       <button className='w-40 rounded border border-pink-500 bg-pink-500 hover:bg-pink-200 mt-2' type='button' onClick={handleUpdate}>
         Update Value to state
       </button>
-      <ReactMarkdown>
-        **Description**: This component uses the **useRef** hook on a text input to update a state without re-rendering the component.
-      </ReactMarkdown>
+      <Description text='This component uses the **useRef** hook on a text input to update a state without re-rendering the component.' />
     </div>
   );
 };

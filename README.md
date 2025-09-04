@@ -32,3 +32,5 @@ npm install
 ## 🛠️ Tech Sta
 - [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [React Router](https://reactrouter.com/home)

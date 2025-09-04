@@ -1,6 +1,7 @@
+import { Description } from './Description';
+
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import ReactMarkdown from 'react-markdown';
 
 export const Spaceships = () => {
   const [spaceships, setSpaceships] = useState([]);
@@ -29,26 +30,29 @@ export const Spaceships = () => {
     <div className='flex flex-col p-2 my-2 gap-2'>
       <strong>Spaceships</strong>
 
-      {spaceships.map((s, i) => (
-        <div key={i} className='flex flex-col'>
-          <span className='flex gap-2'>
-            <strong>name:</strong>
-            {s.name}
-          </span>
-          <span className='flex gap-2'>
-            <strong>model:</strong>
-            {s.model}
-          </span>
-          <span className='flex gap-2'>
-            <strong>passengers:</strong>
-            {s.passengers}
-          </span>
-        </div>
-      ))}
-      <ReactMarkdown>
-        **Description**: This component is using **axios** to fetch data from an API and using the hook **useEffect** to fetch the data as soon as the component
-        loads. Adding an empty array after the useEffect callback makes it load once only.
-      </ReactMarkdown>
+      <div className='grid grid-cols-3 gap-4'>
+        {spaceships.map((s, i) => (
+          <div key={i} className='p-4 border rounded shadow bg-white flex flex-col gap-2'>
+            <span className='flex gap-2'>
+              <strong>Name:</strong>
+              {s.name}
+            </span>
+            <span className='flex gap-2'>
+              <strong>Model:</strong>
+              {s.model}
+            </span>
+            <span className='flex gap-2'>
+              <strong>Passengers:</strong>
+              {s.passengers}
+            </span>
+          </div>
+        ))}
+      </div>
+
+      <Description
+        text='This component is using **axios** to fetch data from an API and using the hook **useEffect** to fetch the data as soon as the component
+        loads. Adding an empty array after the useEffect callback makes it load once only.'
+      />
     </div>
   );
 };
