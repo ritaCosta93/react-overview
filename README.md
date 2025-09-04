@@ -24,6 +24,7 @@ npm install
 - **Spaceships**: This component is using **axios** to fetch data from an API and using the hook **useEffect** to fetch the data as soon as the component loads. Adding an empty array after the useEffect callback makes it load once only.
 - **Starwars**: This component fetches data from an API and uses the **Context API** hook **createContext** to share data to another component. This component is a **Data Provider**.
 - **CorvettesList**: This component consumes data from the **Context API**, and filters it before rendering, using the ternary operator. This component is a **Data Consumer**.
+- **Products**: This component uses the **useReducer** hook and implements a reducer to manage a list of products.
 
 ## 🛠️ Tech Sta
 - [React](https://reactjs.org/)
