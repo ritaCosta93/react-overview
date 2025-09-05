@@ -2,7 +2,10 @@ import { useSpaceships } from '../hooks/UseSpaceships';
 import { Description } from './Description';
 
 export const Spaceships = () => {
-  const { spaceships } = useSpaceships('https://swapi.info/api/starships');
+  const { spaceships, loading, error } = useSpaceships('https://swapi.info/api/starships');
+
+  if (loading) return <p>Loading spaceships...</p>;
+  if (error) return <p>Error: {error.message}</p>;
 
   return (
     <div className='flex flex-col p-2 my-2 gap-2'>
