@@ -15,7 +15,7 @@ export const useSpaceships = url => {
       })
       .catch(err => setError(err))
       .finally(() => setLoading(false));
-  }, [url]);
+  }, []);
 
   return { spaceships, loading, error };
 };
